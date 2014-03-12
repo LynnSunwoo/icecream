@@ -1,73 +1,73 @@
 /*
-Syntax error: Undefined mixin 'font-size'.
-        on line 20 of scss/icecreams.scss, in `font-size'
-        from line 20 of scss/icecreams.scss
+Syntax error: Undefined variable: "$small-width".
+        on line 8 of scss/icecreams.scss
 
-15: #info { 
-16: 	padding-top: 30px;
-17: 	float: left;
-18: 	width: 60%;
-19: 	h1 {
-20: 		@include font-size(30);
-21: 	}
-22: 	p{ @include font-size(12);}
-23: }
-24: 
-25: 
+3: 	margin-top: 30px;
+4: 		
+5: 	position: absolute;
+6: 	top: 0;
+7: 	left: 0;
+8: 	@media (min-width: $small-width){
+9: 			 position: absolute;
+10: 			top: 0;
+11: 			left: 0;
+12: 	
+13: 			}	
 
 Backtrace:
-scss/icecreams.scss:20:in `font-size'
-scss/icecreams.scss:20
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `map'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:7:in `visit'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:315:in `_render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/engine.rb:262:in `render'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `each'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/plugin/compiler.rb:283:in `block in watch'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:108:in `on_change'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `call'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:56:in `poll'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/vendor/listen/lib/listen/adapters/polling.rb:32:in `block in start'
+scss/icecreams.scss:8
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:503:in `block in run_interp_no_strip'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:501:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:501:in `run_interp_no_strip'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:511:in `run_interp'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:476:in `visit_media'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/engine.rb:274:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:393:in `on_file_changed'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/lib/sass/plugin/compiler.rb:248:in `block in watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.2/vendor/listen/lib/listen/adapter.rb:297:in `block in start_poller'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'font-size'.\A         on line 20 of scss/icecreams.scss, in `font-size'\A         from line 20 of scss/icecreams.scss\A \A 15: #info { \A 16: 	padding-top: 30px;\A 17: 	float: left;\A 18: 	width: 60%;\A 19: 	h1 {\A 20: 		@include font-size(30);\A 21: 	}\A 22: 	p{ @include font-size(12);}\A 23: }\A 24: \A 25: "; }
+  content: "Syntax error: Undefined variable: \"$small-width\".\A         on line 8 of scss/icecreams.scss\A \A 3: 	margin-top: 30px;\A 4: 		\A 5: 	position: absolute;\A 6: 	top: 0;\A 7: 	left: 0;\A 8: 	@media (min-width: $small-width){\A 9: 			 position: absolute;\A 10: 			top: 0;\A 11: 			left: 0;\A 12: 	\A 13: 			}	"; }

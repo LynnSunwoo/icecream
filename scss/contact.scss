@@ -1,0 +1,130 @@
+#map-canvas {
+	
+	position: relative;
+	height: 400px;
+	width: 100%;
+}
+
+
+.contactInfo {
+	margin-top: 30px;
+	float:left;
+	width: 100%;
+			@media (min-width: $small-width){
+			width: 100%;
+			}	
+			@media (min-width: $medium-width){
+			width: 100%;		
+			}
+			@media (min-width: $large-width){
+			width: 47.5%;
+			}
+			@media (min-width: $xlarge-width){
+			width: 47.5%;
+			}
+	margin-right: 5%;
+	.info-wrap {
+			text-align: center;
+			background-color: $black;
+			color: $light;
+			margin: 0 15%;
+			padding: 20px;
+			h3 { line-height: 33px; font-size: 26px;}
+		}
+}
+
+.contactForm {
+	margin-top: 30px;
+	float:left;
+	width: 100%;
+	margin: 0;
+	padding-top: 0px;
+	text-align: center;
+			@media (min-width: $small-width){
+			width: 100%;
+			text-align: center;
+			}	
+			@media (min-width: $medium-width){
+			width: 80%;	
+			margin: 0 10%;
+			padding-top: 20px;	
+			text-align: center;
+			}
+			@media (min-width: $large-width){
+			width: 47.5%;
+			margin: 0; 
+			text-align: left;
+			}
+			@media (min-width: $xlarge-width){
+			width: 47.5%;
+			text-align: left;
+			}
+	h2 { font-size: 35px;}
+	p { font-size: 16px;}
+	
+	input { 
+		width: 100%;
+		height: 40px;
+		margin: 10px 0;
+		padding-left: 10px;
+		font-family: $bodyFont;
+		border : none;
+		background-color: $light;
+		border-top: 3px solid $light;
+		border-bottom: 3px solid $light;
+		
+	}
+	input:focus {
+		border-top: 3px solid $black; 
+	}
+	input:hover {
+		border-top: 3px solid $black; 
+	}
+	
+	textarea {
+		width: 100%;
+		height: 140px;
+		margin: 10px 0;
+		padding-left: 10px;
+		font-family: $bodyFont;
+		border : none;
+		background-color: $light;
+		border-top: 3px solid $light;
+		border-bottom: 3px solid $light;
+		}
+		
+		textarea:focus {
+		border-top: 3px solid $black; 
+	}
+	textarea:hover {
+		border-top: 3px solid $black; 
+	}
+		
+	button {
+		float: right;
+		width: 40%;
+		height: 60px;
+		background-color: transparent;
+		font-family: $headerFont;
+		font-size: 33px;
+		color : $black;
+		border: none;
+		margin-top: 10px;
+		border-bottom: 3px solid $black;
+		text-align: center;
+		line-height: 49px;
+		position:relative;
+		
+		 
+	}
+	
+	button:hover {
+		
+	 	background-color: $black;
+		 color : $light;
+		
+	}
+	
+ 
+	
+}
