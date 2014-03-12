@@ -1,0 +1,84 @@
+/* --- Normalize -- */
+@import 'normalize';
+
+/* --- Mixins -- */
+@import 'mixin';
+
+/* Fonts */
+@import url(http://fonts.googleapis.com/css?family=Cantarell:400,400italic|Fjalla+One);
+$headerFont : 'Fjalla One', sans-serif;
+$bodyFont : 'Cantarell', sans-serif;
+
+/* -- variables -- */
+
+/* Colors */
+$black : #302E2E;
+$light : #EAEAEA;
+$grey : #D8D8D8; 
+
+/* Screen sizes */
+$small-width : 322px;
+$medium-width : 482px;
+$large-width: 770px;
+$xlarge-width: 1024px;
+
+
+/* Header Styles */
+@import 'header';
+
+/* CONTENTS */
+
+/* index page Styles */
+@import 'index';
+
+/* icecreams page Styles */
+@import 'icecreams';
+
+/* store page Styles */
+@import 'store';
+
+/* contact page Styles */
+@import 'contact';
+
+
+
+/* GENERAL STYLES HERE */
+
+body {
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: $grey;
+	color: $black;
+	position: relative;
+	width: 100%;
+ 
+}
+
+h1,h2,h3,h4,h5,h6 { font-family: $headerFont; padding: 0; margin: 0; }
+p,a,span { font-family: $bodyFont; padding: 0; margin: 0; }
+
+.wrapper {
+	margin: 0 auto;
+	@include clearfix;
+	position: relative;
+	/*outline: 1px solid red;*/
+	/* mobile view */
+	@media (min-width: $small-width){
+		min-width:$small-width;
+		width: 90%		 		
+	}	
+	@media (min-width: $medium-width){
+		min-width:$medium-width;
+		width: 90%		 		
+	}
+	@media (min-width: $large-width){
+		min-width:$large-width;
+		width: 90%	  		
+	}
+	@media (min-width: $xlarge-width){
+		max-width:$xlarge-width;
+		width: 90%;		  		
+	}
+	
+}

@@ -1,0 +1,173 @@
+#flavors { 
+	float: left;
+	margin-top: 30px;
+		
+	position: absolute;
+	top: 0;
+	left: 0;
+	@media (min-width: $small-width){
+			 position: absolute;
+			top: 0;
+			left: 0;
+	
+			}	
+			@media (min-width: $medium-width){
+				position: absolute;
+				top: 0;
+				left: 0;
+			 	
+			}
+			@media (min-width: $large-width){
+				position: relative;
+			  	
+			}
+			@media (min-width: $xlarge-width){
+			 	
+			}
+	
+}
+
+#display { 
+	#padder{
+		width: 50%;
+		padding: 0 25%;
+			@media (min-width: $small-width){
+			width: 50%;
+			}	
+			@media (min-width: $medium-width){
+			width: 50%;		
+			}
+			@media (min-width: $large-width){
+			width: 50%;
+			}
+			@media (min-width: $xlarge-width){
+			width: 50%;
+			}
+	}
+	float: left;
+	width: 100%;
+	padding: 0px;
+	padding-top: 140px;
+	@media (min-width: $small-width){
+			float: left;
+			width: 100%;
+			padding: 0px;
+			padding-top: 140px;
+			}	
+			@media (min-width: $medium-width){
+			float: left;
+			width: 35%;
+			padding: 0px;
+			padding-top: 140px;
+					
+			}
+			@media (min-width: $large-width){
+			  float: left;
+			width: 35%;
+			padding: 0px;
+			padding-top: 0px;
+			}
+			@media (min-width: $xlarge-width){
+			float: left;
+			width: 35%;
+			padding: 0px;	
+			}
+}
+
+#info { 
+	padding-top: 30px;
+	float: left;
+	width: 100%;
+	padding-top: 140px;
+	@media (min-width: $small-width){
+			float: left;
+			width: 100%;
+			padding: 0px;
+	padding-top: 140px;
+			}	
+			@media (min-width: $medium-width){
+			float: left;
+			width: 60%;
+			padding: 0px;	
+			padding-top: 140px;	
+			}
+			@media (min-width: $large-width){
+			  float: left;
+			width: 60%;
+			padding: 0px;	
+			}
+			@media (min-width: $xlarge-width){
+			float: left;
+			width: 60%;
+			padding: 0px;	
+			}
+	h1 {
+		@include font-size(30);
+		position: absolute;
+		top: 60px;
+		left:  5%;
+		padding-top: 20px;
+		@media (min-width: $small-width){
+			 position: absolute;
+			top: 90px;
+		left: 12%;
+		text-align: center;
+			}	
+			@media (min-width: $medium-width){
+				position: relative;
+			 	top:  0px;
+				left: 0;
+				text-align: left;
+			}
+			@media (min-width: $large-width){
+				position: relative;
+			}
+	}
+	p{ @include font-size(12); padding-bottom: 30px; @media (min-width: $small-width){
+			 margin-top: -130px;
+			}	
+			@media (min-width: $medium-width){
+				margin-top:  0px;
+			} }
+}
+
+
+.f_con {  
+		float: left;
+		width: 13%;	
+		margin-right: 2%;	 
+		text-align: center;
+		@media (min-width: $small-width){
+		width: 13%;	
+		padding-bottom: 30px;
+
+		}	
+		@media (min-width: $medium-width){
+		width: 12%;	margin-right: 3%;		
+		}
+		@media (min-width: $large-width){
+		  width: 13%;margin-right: 3%;	
+		}
+		@media (min-width: $xlarge-width){
+		width: 12%;	margin-right: 3.5%;
+		}
+		
+		p {display: none;
+			@media (min-width: $small-width){
+			display: none;
+
+		}	
+		@media (min-width: $medium-width){
+		display: none;		
+		}
+		@media (min-width: $large-width){
+		 display: none;	
+		}
+		@media (min-width: $xlarge-width){
+		display: inline;
+		}
+		}
+	}
+
+#chocolate{
+}
