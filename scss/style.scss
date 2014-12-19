@@ -1,84 +1,94 @@
-/* --- Normalize -- */
+/* --- NORMALIZE -- */
 @import 'normalize';
 
-/* --- Mixins -- */
-@import 'mixin';
+/* --- MIXIN -- */
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
 
-/* Fonts */
-@import url(http://fonts.googleapis.com/css?family=Cantarell:400,400italic|Fjalla+One);
-$headerFont : 'Fjalla One', sans-serif;
-$bodyFont : 'Cantarell', sans-serif;
+@mixin font-size ($sizeValue : 1.6 ){
+	font-size: $sizeValue + px;
+	font-size: ($sizeValue/10) + rem;
+}
 
-/* -- variables -- */
+/* -- VARIABLE -- */
+ 
+	/* SCREEN SIZES */
+	$small-width : 322px;
+	$medium-width : 482px;
+	$large-width: 770px;
+	$xlarge-width: 1024px;
+    
+    $special : 1340px;
+    /* COLORS */
 
-/* Colors */
-$black : #302E2E;
-$light : #EAEAEA;
-$grey : #D8D8D8; 
+    $background_color: #2FB4BA;
 
-/* Screen sizes */
-$small-width : 322px;
-$medium-width : 482px;
-$large-width: 770px;
-$xlarge-width: 1024px;
+    // NORMAL INTERFACE
+        $BORDER_GREEN : #5BC2A7;
+        $BACKGROUND_LIGHT : #F4F3F3;
+        $BACKGROUND_MID : #CFCBC2;
+        $CIRCLE_WHITE : #EFEFEF;
+        $CIRCLE_GREY : #A8A7A3;
+        $COLOR_PALETTE_CIRCLE : #CFCBC2;
+        $DARK_BORDER : #474647;
 
+    // HOVER STATE
+    // TOOL
+        $BOX_YELLOW : #FFCF56;
+        $TOOL_CIRCLE : #FBAF3C;
+        $TOOL_CIRCLE_HOVER : #F36E53;
 
-/* Header Styles */
+    // OPTIONS
+        $BOX_GREEN : #7ECDC3;
+        $OPTIONS_CIRCLE : #63A69F;
+        $OPTIONS_CIRCLE_HOVER : #2E5E58;
+
+    // COLOR PALETTE
+        $BOX_GREY : #A8A091;
+        $PALETTE_CIRCLE_HOVER : #A8A091; 
+
+    // SIDEBAR
+        $SIDEBAR_BG : #3F997D;
+
+	/* FONTS */
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+	$MainFont: 'Open Sans', sans-serif;
+
+/*-- HEADER --*/
 @import 'header';
 
-/* CONTENTS */
+/*-- CONTENT --*/
+@import 'layout';
 
-/* index page Styles */
-@import 'index';
+/*-- SGV --*/
+@import 'sgv';
 
-/* icecreams page Styles */
-@import 'icecreams';
+/*-- Color Palletes container --*/
+@import 'color_palette';
 
-/* store page Styles */
-@import 'store';
-
-/* contact page Styles */
-@import 'contact';
+/*-- Side Bar --*/
+@import 'sidebar';
 
 
+/* Responsive
+@media (min-width: $small-width){	
 
-/* GENERAL STYLES HERE */
-
-body {
-	background-image: url("../images/bg.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-color: $grey;
-	color: $black;
-	position: relative;
-	width: 100%;
- 
-}
-
-h1,h2,h3,h4,h5,h6 { font-family: $headerFont; padding: 0; margin: 0; }
-p,a,span { font-family: $bodyFont; padding: 0; margin: 0; }
-
-.wrapper {
-	margin: 0 auto;
-	@include clearfix;
-	position: relative;
-	/*outline: 1px solid red;*/
-	/* mobile view */
-	@media (min-width: $small-width){
-		min-width:$small-width;
-		width: 90%		 		
 	}	
-	@media (min-width: $medium-width){
-		min-width:$medium-width;
-		width: 90%		 		
-	}
-	@media (min-width: $large-width){
-		min-width:$large-width;
-		width: 90%	  		
-	}
-	@media (min-width: $xlarge-width){
-		max-width:$xlarge-width;
-		width: 90%;		  		
-	}
-	
+@media (min-width: $medium-width){	 
+
 }
+@media (min-width: $large-width){		
+}
+
+@media (min-width: $xlarge-width){	  
+
+}
+*/
