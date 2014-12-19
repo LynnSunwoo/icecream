@@ -1,0 +1,153 @@
+
+
+/*-- basic layout --*/
+body {
+	font-family: $MainFont;
+    position: relative;
+    line-height: 0px;
+    background-color: $background_color;
+    background-image: url("../images/backgrounds/background.png");
+    background-position: center;
+    background-repeat: repeat-y;
+    @include clearfix;
+    div {
+        width: 100%;
+        position: relative;
+    }
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 2.5% auto;
+    @include clearfix;
+}
+
+// game border
+#game_border {
+    @include clearfix;
+    max-width: 960px;
+    position: relative;
+    background-color: $BORDER_GREEN;
+    float: left;
+    z-index: 100;
+    /* mobile view */
+}
+ 
+// game container
+#game_container {
+    @include clearfix;
+    margin: 1% auto;
+    padding: 2%;
+    width: 94%;
+    background-color: $BACKGROUND_LIGHT;
+}
+
+// making placehloder responsive
+img {
+    max-width: 100%;
+}    
+
+/*-- Coloring Game --*/
+
+// titles 
+#game_title {
+    //height: 25px;
+    h3 { color: white; padding: 0 2%; line-height: 18px; /*display: none;*/}
+}
+
+
+
+// Tools container
+#toolbox_container {
+    width: 13%;
+    background-color: $BOX_YELLOW;
+    float: right;    
+    
+    //toolbox title
+    #toolbox_title {       
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: $DARK_BORDER;
+        h4 {
+            display: inline-block;
+            color: $BACKGROUND_LIGHT;
+            padding: 0 8px; 
+            line-height: 0;
+        }
+    }
+    
+    //toolbox icons
+    #toolbox_icons_container {
+        position: relative;
+        
+        // overlab images
+        #tool_paint {
+             
+            #icon_brush {
+            position: absolute;
+            top: 0;
+            left: 0;
+            }
+        }
+        
+        .inner_circle { 
+            @include clearfix;
+            margin: 10px auto;
+            width: 60%;
+            height: auto;
+            border-radius: 50%;
+            background-color: white;
+            border: 10px solid $TOOL_CIRCLE;
+        }
+        .inner_circle:hover { cursor: pointer; border: 10px solid $TOOL_CIRCLE_HOVER; }
+    }
+} 
+
+
+// Options container 
+#option_container {
+    width: 13%;
+    background-color: $BOX_GREEN;
+    float: right;     
+    margin-top: 10px; 
+    
+    //option title
+    #option_title {       
+        width: 100%;
+        height: auto;
+        text-align: center;
+        background-color: $DARK_BORDER;
+        h4 {
+            display: inline-block;
+            color: $BACKGROUND_LIGHT;
+            padding: 0 8px; 
+            line-height: 0;
+        }
+    }
+    
+    //options icons
+    #option_icons_container {
+        position: relative;
+        
+        .inner_circle { 
+            @include clearfix;
+            margin: 10px auto;
+            width: 60%;
+            height: auto;
+            border-radius: 50%;
+            background-color: white;
+            border: 10px solid $OPTIONS_CIRCLE;
+        }
+        .inner_circle:hover { cursor: pointer; border: 10px solid $OPTIONS_CIRCLE_HOVER; }
+    }
+}
+
+
+
+
+// hiding unnecesary text
+.texthider { display: none;	}
+
+
+

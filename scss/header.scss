@@ -1,237 +1,28 @@
-header {
-	background-image: url(../images/border.png);
-	background-repeat: repeat-x;
-	/*background-size: 20px 20px;*/
-	width: 100%; 
-	position: relative;
-	padding-top: 45px;
-	@media (min-width: $small-width){
-		padding-top: 45px;	 		
-		}	
-		@media (min-width: $medium-width){
-		padding-top: 55px; 		
-		}
-		@media (min-width: $large-width){
-		padding-top: 65px; 		
-		}
-		@media (min-width: $xlarge-width){
-		padding-top: 75px;	  		
-		}
-}
-
-body > header:nth-child(1) > div:nth-child(1) {
-	border-bottom: 5px solid $black;
-	bottom: 0;
-	
-}
-
-
-.logo {
-	float: left;
-	bottom: 10px; 
-	h1 {
-		 @include font-size(30)	;
-		@media (min-width: $small-width){
-		 @include font-size(30)		 		
-		}	
-		@media (min-width: $medium-width){
-		 @include font-size(40)	 		
-		}
-		@media (min-width: $large-width){
-		 @include font-size(42)  		
-		}
-		@media (min-width: $xlarge-width){
-		 @include font-size(44)		  		
-		}
-	}
-
-
-}
-
-.nav {
-	 	position: absolute;
-			bottom: -130px;
-			right: 0; 
-			@media (min-width: $small-width){
-		 	position: absolute;
-			bottom: -130px;
-		 
-			width: 100%;	 		
-			}	
-			@media (min-width: $medium-width){
-			position: absolute;
-			bottom: -55px;
-			right: 0px;
-			width: 100%;	 		
-			}
-			@media (min-width: $large-width){
-			position: absolute;
-			bottom: 10px;
-			right: 0;	
-			width: auto;  		
-			}
-			@media (min-width: $xlarge-width){
-			position: absolute;
-			bottom: 10px;
-			right: 0;
-			width: auto;
-			}	
-
-	ul {
-		list-style: none; 
-		 padding: 0;
-			margin:0;
-		li{	text-align: center;
-			float: right; 
-			   width: 48%;	
-			 	margin: 1%;
-			 	padding: 5px 0;
-			 	background-color: $black;
-				 @media (min-width: $small-width){
-			 	width: 48%;
-			 	margin: 1%;	
-			 	background-color: $black;
-			 	padding: 5px 0;
-				}	
-				@media (min-width: $medium-width){
-				width: auto;
-				margin: 0;
-				 padding: 0;	
-				background-color: transparent;	 		
-				}
-				@media (min-width: $large-width){
-				width: auto;		
-				}
-				@media (min-width: $xlarge-width){
-				width: auto;
-				}
-
-			a{  
-				font-family: $headerFont; 
-				 text-decoration: none; 
-				 color: $black;
-				 margin: 0px 5px;	
-				 @include font-size(20);	
-				 margin: 0px ;
-				 color: $light;
-				 @media (min-width: $small-width){
-			 	@include font-size(20);	
-			 	margin: 0px ;
-			 	color: $light;
-				}	
-				@media (min-width: $medium-width){
-				@include font-size(20);
-				margin: 0px 20px;	
-				color: $black; 		
-				}
-				@media (min-width: $large-width){
-				@include font-size(22); 
-				margin: 0px 20px;		
-				}
-				@media (min-width: $xlarge-width){
-				@include font-size(24);
-				margin: 0px 20px;
-				}
-
-				 &:last-child {
-				 	margin: 0;
-				 	@media (min-width: $small-width){
-				 	margin: 0;
-					}	
-					@media (min-width: $medium-width){
-					margin: 0px 20px 0px 0px; 		
-					}
-					@media (min-width: $large-width){
-					margin: 0px 20px 0px 0px;		
-					}
-					@media (min-width: $xlarge-width){
-					margin: 0px 20px 0px 0px;
-					}
-
-				}
-				 &:first-child {
-				 	margin: 0;
-				 	@media (min-width: $small-width){
-				 	margin: 0;
-					}	
-					@media (min-width: $medium-width){
-					margin: 0px 0px 0px 20px;	 		
-					}
-					@media (min-width: $large-width){
-					margin: 0px 0px 0px 20px;		
-					}
-					@media (min-width: $xlarge-width){
-					margin: 0px 0px 0px 20px;
-					}}
-				 
-			}
-			a:hover{
-				border: none;
-				text-decoration: underline;
-				@media (min-width: $small-width){
-			 	 border:none;
-			 	 text-decoration: underline;
-				}	
-				@media (min-width: $medium-width){
-				border-top: 10px solid $black;	
-				border-bottom: none;
-				border-left: none;
-				border-right: none;
-				text-decoration: none;
-				}
-				@media (min-width: $large-width){
-				border-bottom: 10px solid $black;
-				border-top: none;	
-				border-left: none;
-				border-right: none;
-				}
-				@media (min-width: $xlarge-width){
-				border-bottom: 10px solid $black;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				 
-				}	
-			}
-		}
-
-	}
-}
-
-.here { 		border:none;
-				text-decoration: underline;
-				@media (min-width: $small-width){
-			 	border:none;
-			 	text-decoration: underline;
-				}	
-				@media (min-width: $medium-width){
-				border-top: 10px solid $black;	
-				border-bottom: none;
-				border-left: none;
-				border-right: none;
-				text-decoration: none;
-				}
-				@media (min-width: $large-width){
-				border-bottom: 10px solid $black;
-				border-top: none;
-				border-left: none;
-				border-right: none;	
-				}
-				@media (min-width: $xlarge-width){
-				border-bottom: 10px solid $black;
-				border-top: none;
-				border-left: none;
-				border-right: none;
-				}	
-			}
-
-
-footer {
-	background-color: $black;
-	height: 40px;
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	
+.header {
+    position: relative;
+    background-color: $DARK_BORDER;
+    height: 35px;
+    width: 100%;
+    
+    .header_wrapper {
+        width: 90%;
+        margin: 0 auto;
+        @include clearfix;
+        padding-top: 3px;
+        .homeicon {
+            width: 28px;
+            height: 28px; 
+            float: left;
+            img { 
+            }
+        }
+        .headertext {
+            width: 120px;
+            height: 28px;
+            float: left;
+            padding-left: 6px;
+            a { color: white ; line-height: 30px; text-decoration: none; }
+            a:hover { color: #FE9744; }
+        }
+    }
 }

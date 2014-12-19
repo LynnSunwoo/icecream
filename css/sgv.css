@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined variable: "$DARK_BORDER".
+        on line 27 of scss/sgv.scss
+
+22: 	display: inline-block;
+23: 	position: relative;
+24: 	padding-bottom: 62%;
+25: 	vertical-align: middle;
+26: 	overflow: hidden;
+27: 	outline: 4px solid $DARK_BORDER;
+28: 
+29: }
+30: 
+31: #coloring_book_image svg{
+32: 
+
+Backtrace:
+scss/sgv.scss:27
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/variable.rb:49:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/list_literal.rb:62:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/script/tree/node.rb:50:in `perform'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:121:in `with_frame'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:152:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:151:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/engine.rb:274:in `render'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:378:in `update_stylesheet'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `each'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:357:in `on_file_changed'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/lib/sass/plugin/compiler.rb:250:in `block in watch'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:252:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.8/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$DARK_BORDER\".\A         on line 27 of scss/sgv.scss\A \A 22: 	display: inline-block;\A 23: 	position: relative;\A 24: 	padding-bottom: 62%;\A 25: 	vertical-align: middle;\A 26: 	overflow: hidden;\A 27: 	outline: 4px solid $DARK_BORDER;\A 28: \A 29: }\A 30: \A 31: #coloring_book_image svg{\A 32: "; }

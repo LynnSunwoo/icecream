@@ -1,21 +1,21 @@
 /*
-Syntax error: Undefined variable: "$DARK_BORDER".
-        on line 3 of scss/header.scss
+Syntax error: Undefined mixin 'clearfix'.
+        on line 3 of scss/color_palette.scss, in `clearfix'
+        from line 3 of scss/color_palette.scss
 
-1: .header {
-2:     position: relative;
-3:     background-color: $DARK_BORDER;
-4:     height: 35px;
-5:     width: 100%;
-6:     
-7:     .header_wrapper {
-8:         width: 90%;
+1: // the color palettes
+2: #palette_container {
+3:     @include clearfix;
+4:     float: left;
+5:     width: 84%;
+6:     padding: 15px 5px;
+7:     height: auto;
+8:     background-color: $BOX_GREY;
 
 Backtrace:
-scss/header.scss:3
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+scss/color_palette.scss:3:in `clearfix'
+scss/color_palette.scss:3
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -59,4 +59,4 @@ C:/Ruby193/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$DARK_BORDER\".\A         on line 3 of scss/header.scss\A \A 1: .header {\A 2:     position: relative;\A 3:     background-color: $DARK_BORDER;\A 4:     height: 35px;\A 5:     width: 100%;\A 6:     \A 7:     .header_wrapper {\A 8:         width: 90%;"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 3 of scss/color_palette.scss, in `clearfix'\A         from line 3 of scss/color_palette.scss\A \A 1: // the color palettes\A 2: #palette_container {\A 3:     @include clearfix;\A 4:     float: left;\A 5:     width: 84%;\A 6:     padding: 15px 5px;\A 7:     height: auto;\A 8:     background-color: $BOX_GREY;"; }

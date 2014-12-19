@@ -1,0 +1,45 @@
+// SVG container
+#coloringpage_container {
+    
+    
+    #coloring_book_image {
+    
+    }
+}
+
+#coloring_book_image {
+    float: left;
+    width: 84%;
+    //background-color: $DARK_BORDER;
+    padding: 5px; 
+}
+
+#svg_container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	float: left;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 62%;
+	vertical-align: middle;
+	overflow: hidden;
+	outline: 4px solid $DARK_BORDER;
+
+}
+
+#coloring_book_image svg{
+
+}
+
+.svg-content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: 0;
+
+}
+

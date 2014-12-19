@@ -1,0 +1,139 @@
+// the color palettes
+#palette_container {
+    @include clearfix;
+    float: left;
+    width: 84%;
+    padding: 15px 5px;
+    height: auto;
+    background-color: $BOX_GREY;
+    margin-top: 10px;
+    border-radius: 2px;
+    //left arrow
+    #scroll_left {
+        width: 5%;
+        float: left;
+        height: 90px;
+        background-image: url("../images/icons/scroll_left.png");
+        background-repeat: no-repeat;
+        background-size: 90% auto;
+        background-position: center center; 
+    }
+    #scroll_left:hover { cursor: pointer; background-image: url("../images/icons/scroll_left_hover.png");}
+    
+    //right arrow
+    #scroll_right {
+        width: 5%;
+        float: right;
+        height: 90px;
+        background-image: url("../images/icons/scroll_right.png");
+        background-repeat: no-repeat;
+        background-size: 90% auto;
+        background-position: center center; 
+    }
+    #scroll_right:hover { cursor: pointer; background-image: url("../images/icons/scroll_right_hover.png");}
+    
+    //color palettes
+    #colors {
+        width: 86%;
+        float: left;
+        height: 90px;
+        margin: 0 2%;
+        background-color: WHITE;
+        border-radius: 20px;
+    }
+}
+
+//Color Palette
+
+#colors {
+ 
+    overflow: hidden;
+    
+    ul {
+        list-style: none;
+        margin: 0;
+        margin-top: -11px;
+        padding: 0;
+        width: 2600px;
+        @include clearfix;
+        position: absolute;
+        left: 0;
+        li {
+            Float: left;
+            margin: 0 10px;
+            width: 68px;
+            height: 68px;
+            border-radius: 40px;
+            position: relative;     
+            border: 7px solid $BACKGROUND_MID;  
+            //overlap the shine
+            img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 68px;
+            }
+            &[id="#E9292F"]{ background-color: #E9292F; }
+            &[id="#EC5724"]{ background-color: #EC5724; }
+            &[id="#F0763F"]{ background-color: #F0763F; }
+            &[id="#FAAA21"]{ background-color: #FAAA21; }
+            &[id="#FAD41C"]{ background-color: #FAD41C; }
+            &[id="#AAC02C"]{ background-color: #AAC02C; }
+            &[id="#5A913A"]{ background-color: #5A913A; }
+            &[id="#006644"]{ background-color: #006644; }
+            &[id="#009887"]{ background-color: #009887; }
+            &[id="#7ECDC3"]{ background-color: #7ECDC3; }
+            &[id="#62BFDC"]{ background-color: #62BFDC; }
+            &[id="#0077AD"]{ background-color: #0077AD; }
+            &[id="#263287"]{ background-color: #263287; }
+            &[id="#462A88"]{ background-color: #462A88; }
+            &[id="#4E0A55"]{ background-color: #4E0A55; }
+            &[id="#924564"]{ background-color: #924564; }
+            &[id="#F0648B"]{ background-color: #F0648B; }
+            &[id="#F6A0B3"]{ background-color: #F6A0B3; }
+            &[id="#E8D4A6"]{ background-color: #E8D4A6; }
+            &[id="#BF9A6A"]{ background-color: #BF9A6A; }
+            &[id="#7F6350"]{ background-color: #7F6350; }
+            &[id="#000000"]{ background-color: #000000; }
+            &[id="#4C4C4C"]{ background-color: #4C4C4C; }
+            &[id="#A0A0A0"]{ background-color: #A0A0A0; }
+            &[id="#FFFFFF"]{ background-color: #FFFFFF; }
+        }
+        li:hover { cursor: pointer;  border: 7px solid $PALETTE_CIRCLE_HOVER;  }
+    }
+}
+
+input{ 
+	width: 68px;
+	height: 68px;
+	border-radius: 40px;
+    border: none;
+        /* colors  */
+		&[class="#E9292F"]{ background-color: #E9292F; }
+        &[class="#EC5724"]{ background-color: #EC5724; }
+        &[class="#F0763F"]{ background-color: #F0763F; }
+        &[class="#FAAA21"]{ background-color: #FAAA21; }
+        &[class="#FAD41C"]{ background-color: #FAD41C; }
+        &[class="#AAC02C"]{ background-color: #AAC02C; }
+        &[class="#5A913A"]{ background-color: #5A913A; }
+        &[class="#006644"]{ background-color: #006644; }
+        &[class="#009887"]{ background-color: #009887; }
+        &[class="#7ECDC3"]{ background-color: #7ECDC3; }
+        &[class="#62BFDC"]{ background-color: #62BFDC; }
+        &[class="#0077AD"]{ background-color: #0077AD; }
+        &[class="#263287"]{ background-color: #263287; }
+        &[class="#462A88"]{ background-color: #462A88; }
+        &[class="#4E0A55"]{ background-color: #4E0A55; }
+        &[class="#924564"]{ background-color: #924564; }
+        &[class="#F0648B"]{ background-color: #F0648B; }
+        &[class="#F6A0B3"]{ background-color: #F6A0B3; }
+        &[class="#E8D4A6"]{ background-color: #E8D4A6; }
+        &[class="#BF9A6A"]{ background-color: #BF9A6A; }
+        &[class="#7F6350"]{ background-color: #7F6350; }
+        &[class="#000000"]{ background-color: #000000; }
+        &[class="#4C4C4C"]{ background-color: #4C4C4C; }
+        &[class="#A0A0A0"]{ background-color: #A0A0A0; }
+        &[class="#FFFFFF"]{ background-color: #FFFFFF; }
+}
+ 
+//input:hover { border: 8px solid $PALETTE_CIRCLE_HOVER; }

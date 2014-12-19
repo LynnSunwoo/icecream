@@ -1,21 +1,22 @@
 /*
-Syntax error: Undefined variable: "$DARK_BORDER".
-        on line 3 of scss/header.scss
+Syntax error: Undefined mixin 'clearfix'.
+        on line 4 of scss/sidebar.scss, in `clearfix'
+        from line 4 of scss/sidebar.scss
 
-1: .header {
-2:     position: relative;
-3:     background-color: $DARK_BORDER;
-4:     height: 35px;
-5:     width: 100%;
-6:     
-7:     .header_wrapper {
-8:         width: 90%;
+1: // SIDE BAR 
+2: .sidebar_container {
+3:     
+4:     @include clearfix;
+5:     width: 250px;
+6:     position: absolute;
+7:     margin-top: 60px;
+8:     margin-left:760px;
+9:     // the contents, that slides
 
 Backtrace:
-scss/header.scss:3
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/variable.rb:49:in `_perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/script/node.rb:40:in `perform'
-C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
+scss/sidebar.scss:4:in `clearfix'
+scss/sidebar.scss:4
+C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:37:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/perform.rb:100:in `visit'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.14/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -59,4 +60,4 @@ C:/Ruby193/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$DARK_BORDER\".\A         on line 3 of scss/header.scss\A \A 1: .header {\A 2:     position: relative;\A 3:     background-color: $DARK_BORDER;\A 4:     height: 35px;\A 5:     width: 100%;\A 6:     \A 7:     .header_wrapper {\A 8:         width: 90%;"; }
+  content: "Syntax error: Undefined mixin 'clearfix'.\A         on line 4 of scss/sidebar.scss, in `clearfix'\A         from line 4 of scss/sidebar.scss\A \A 1: // SIDE BAR \A 2: .sidebar_container {\A 3:     \A 4:     @include clearfix;\A 5:     width: 250px;\A 6:     position: absolute;\A 7:     margin-top: 60px;\A 8:     margin-left:760px;\A 9:     // the contents, that slides"; }

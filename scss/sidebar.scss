@@ -1,0 +1,147 @@
+// SIDE BAR 
+.sidebar_container {
+    
+    @include clearfix;
+    width: 250px;
+    position: absolute;
+    margin-top: 60px;
+    margin-left:760px;
+    // the contents, that slides
+    //dududuh
+    // transition!!!! tab moving right and left.
+    -webkit-transition: margin-left 2s ease ;  
+    -moz-transition:  margin-left 2s ease ;  
+    -o-transition:  margin-left 2s ease ;  
+    transition:  margin-left 2s ease ; 
+    .sidebar {
+        width: 200px; 
+        float: left;
+        background-color: $SIDEBAR_BG;    
+        overflow: hidden;
+        height: 630px;
+        @include clearfix;
+    }
+    
+    // The clickable tab
+    label {
+            cursor: pointer;
+            height: auto;
+            @include clearfix;
+        }
+    // incase if you need a checked or not.
+    input { display: none; }
+    // side bar tab
+    #sidebarTab {
+        float: left;
+        width: 30px;
+        margin-top: 170px;
+        @include clearfix;
+        height: auto; 
+        
+        
+        #top {
+            float: left;
+            width: 0;
+            height: 0;
+            border-bottom: 30px solid $SIDEBAR_BG;
+            border-right: 30px solid transparent; 
+        }
+        #mid {
+            float: left;
+            width: 30px;
+            height: 200px;
+            background-color: $SIDEBAR_BG;
+        }
+        .opencloseicon_container {
+            width: 30px;
+            height: 200px;
+            background-color: transparent;
+            background-image: url("../images/sidebar/open_normal.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 50% auto;
+            transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+                -ms-transform: rotate(0deg);
+                -moz-transform: rotate(0deg); 
+            // transition!!!! tab moving right and left.
+            -webkit-transition: transform 1s ease ;  
+            -moz-transition:  transform 1s ease ;  
+            -o-transition:  transform 1s ease ;  
+            transition:  transform 1s ease ; 
+        }
+        .opencloseicon_container:hover { background-image: url("../images/sidebar/open_hover.png"); cursor: pointer; 
+        
+        }
+        // rotates the arrow
+        .rotater {
+             // change directions
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);   
+                transform: rotate(180deg);
+        }   
+        #bot {
+            float: left;
+            width: 0;
+            height: 0;
+            border-left: 30px solid $SIDEBAR_BG;
+            border-bottom: 30px solid transparent;       
+        }
+        
+    
+    }
+}
+ 
+.lefter {  margin-left: 960px; }
+ 
+
+// sidebar content
+#thumb_container {
+   position: relative;
+   //scroll up
+   #scroll_up {
+      position: absolute;
+      top: -38px;
+      height: 35px;
+      background-image: url("../images/icons/scroll_up.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 13% auto;
+      z-index: 99;
+   }
+   #scroll_up:hover { background-image: url("../images/icons/scroll_up_hover.png"); cursor: pointer; }
+   
+    //scroll down
+   #scroll_down {
+      position: absolute;
+      bottom: -38px;
+      height: 35px;
+      background-image: url("../images/icons/scroll_down.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 13% auto;
+      z-index: 99;
+   }
+   #scroll_down:hover { background-image: url("../images/icons/scroll_down_hover.png"); cursor: pointer; }
+   #thumbslist {
+      position: relative;
+      height: 540px;
+      overflow: hidden; 
+      margin-top: 40px; 
+      ul {
+         padding: 0;
+         margin: 0 20px;
+         list-style: none;
+         position: absolute;
+         top: 0px;
+         width: 160px;
+         li {
+            margin: 0px;
+            padding: 10px 0px; 
+
+         }
+      }
+   }
+}
+    
